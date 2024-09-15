@@ -11,6 +11,7 @@ import humidityIcon from '../assets/humidity.png';
 
 
 const Weather = () => {
+   
    const inputRef=useRef();
    const[searches,setSearch]=useState('')
    const[weatherData,setWeatherData]=useState(false);
@@ -73,6 +74,7 @@ const Weather = () => {
          },[])
   return (
     <div className='weather'>
+      <title>Weather_app</title>
        <div className='searchbox'>
               <input ref={inputRef}
                value={searches}
